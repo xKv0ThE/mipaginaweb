@@ -84,20 +84,20 @@ function resultadojuego(resultadojugador)
         }
 }
 
-function empate(){parraforesultado.innerHTML = parraforesultado.innerHTML + "<br>" + "Hemos empatado."
+function empate(){parraforesultado.innerHTML = parraforesultado.innerHTML + " Hemos empatado."
 imagenempate.src="https://i.imgur.com/RcVb73E.png";
 imagenempate.height="600";
 const divimg = document.getElementById("divimg");
 divimg.appendChild(imagenempate);
 };
 
-function pierdes(){parraforesultado.innerHTML = parraforesultado.innerHTML + "<br>" + "Has perdido."
+function pierdes(){parraforesultado.innerHTML = parraforesultado.innerHTML + " Has perdido."
 imagenempate.src="https://i.imgur.com/7A06RH3.png";
 const divimg = document.getElementById("divimg");
 divimg.appendChild(imagenempate);
 };
 
-function ganas(){parraforesultado.innerHTML = parraforesultado.innerHTML + "<br>" + "Has ganado."
+function ganas(){parraforesultado.innerHTML = parraforesultado.innerHTML + " Has ganado."
 imagenempate.src="https://imgur.com/aTxx3pJ.png";
 const divimg = document.getElementById("divimg");
 divimg.appendChild(imagenempate);
