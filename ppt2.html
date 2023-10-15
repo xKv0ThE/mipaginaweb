@@ -5,22 +5,32 @@
     <base target="_blank">
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <style>
-        #botonesJuego {width: 30%; height: 30%; font-size: 4vw;}
-        #div { width: 100%; float: left;}
-        #div3 {background-color: aquamarine; float: right; width: 100%; height: 30vh; padding-left: 10%;}
-        #parraforesultado {font-size: 4vw;}
-        #divimg {margin-left: 40%;}
+        #botonPiedra {width: 30%; height: 30%; font-size: 4vw; padding-left:5%;  text-align: center;}
+        #botonPapel {width: 30%; height: 30%; font-size: 4vw; padding-left:5%;  text-align: center;}
+        #botonTijeras {width: 30%; height: 30%; font-size: 4vw; padding-left:5%;  text-align: center;}
+        #div { width: 100%; float: left; margin-left:5%}
+        /*#div3 {background-color: aquamarine; display:inline-block;}*/
+        #div3 {
+            display: flex;
+            justify-content: center;
+            text-align: center; /* Para asegurar que el contenido esté centrado dentro del div */
+            ; /* Ajusta el espacio interior según sea necesario */
+                }
+        #parraforesultado {font-size: 4vw; background-color:aquamarine; margin:2.5%;}
+        #divimg {margin-left: 35%; margin-top:7.5%}
         #botonjugar {height: 30%; width: 30%; font-size: 4vw; margin-left: 33%; margin-top: 10%;}
     </style>
 </head>
 
 <body style="background-color: rgb(73, 73, 73);" id="body">
-    <p id="piedra"></p>
+    <div id="div2"></div>
+    
     <div id="div">
     </div>
+    
     <button id="botonjugar" type="button" onclick="cambio()">JUGAR</button>
 
-    <div id="div2"></div>
+    
     <div id="divimg"></div>
 
     <script src="scripts/ppt.js"></script>
