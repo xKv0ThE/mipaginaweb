@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--PROYECTO CALCULADORA COMENZADO 09/10/2023-->
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <base target="_blank" href>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <!-- poner <link> con un icono de la pagina-->
+    <style>
+        .boton { width:10%; height:100%; font-size:1.5em; padding:2%;}
+        .funcion { width:10%; height:100%; font-size:1.5em; padding-top:2%; padding-bottom:2% }
+        .output { width:30.4%; height:100%; font-size:1.5em; padding:2% }
+        #div {text-align: center; }
+
+        @media only screen and (max-width: 600px) {
+            .boton, .funcion, .output { width: 25%; }
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(43, 38, 38);">
+<div id="div">
+    <!--BOTONES PARA LOS NÚMEROS-->
+    <button class="boton" type="button" onclick="leer.call(this)"> 7 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> 8 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> 9 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> + </button> <br>
+    <button class="boton" type="button" onclick="leer.call(this)"> 4 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> 5 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> 6 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> - </button> <br>
+    <button class="boton" type="button" onclick="leer.call(this)"> 1 </button> 
+    <button class="boton" type="button" onclick="leer.call(this)"> 2 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> 3 </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> x </button> <br>
+    <button class="boton" type="button" onclick="leer.call(this)"> 0 </button>
+    <button class="boton" type="button" onclick="operaciones()"> = </button>
+    <button class="funcion" type="button" onclick="del()"> DEL </button>
+    <button class="boton" type="button" onclick="leer.call(this)"> ÷ </button> <br>
+    <!--RESULTADO-->
+    <button class="output" id="output" type="button" onclick="">OUTPUT</button>
+    <!--FUNCION RESULTADO ANTERIOR-->
+    <button class="funcion" type="button" onclick="ans()"> ANS </button>
+</div>
+
+
+    
+    
+    <script src="scripts/inputs.js"></script>
+    <script src="scripts/operaciones.js"></script>
+    <script src="scripts/del.js"></script>
+    <script src="scripts/ans.js"></script>
+
+    <!--BOTONES DE APOYO PARA CREAR EL CODIGO-->
+    
+    
+</body>
+
+</html>
